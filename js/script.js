@@ -174,6 +174,7 @@ function onCellClicked(isRightClick, elCell, i, j) {
     onCellRevealed(elCell, currCell, i, j)
   }
   checkGameOver(elCell)
+  debugger
 }
 
 function revealHint(elCell, currCell, cellI, cellJ) {
@@ -206,14 +207,14 @@ function hideCell(elCell, currCell) {
 // A function which marks or unmarks current cell as a flag
 function onCellMarked(elCell, currCell) {
   if (!elCell.classList.contains('flag-cell')) {
+    currCell.isMarked = true
     renderCell(elCell, currCell, 'flag-cell', FLAG)
     gGame.markedCount++
-    currCell.isMarked = true
   } else {
+    currCell.isMarked = false
     elCell.classList.remove('flag-cell')
     elCell.innerHTML = EMPTY
     gGame.markedCount--
-    currCell.isMarked = false
   }
 }
 
