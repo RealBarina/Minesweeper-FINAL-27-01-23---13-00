@@ -1,0 +1,216 @@
+html,
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+  background-color: #4772d7;
+}
+
+.modal {
+  display: none;
+  width: 20%;
+  height: fit-content; 
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 38%;
+  padding: 1vw;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  background-color: rgb(225, 228, 222);
+  color: black;  
+  border: solid 5px grey;
+  border-radius: 2vw;
+}
+
+.main-container {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.headers-container {
+  flex: 0 1 auto;
+}
+
+h1 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  color: white;
+}
+
+.title-container {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  background-color: #1d3d86;
+}
+
+.diff-title {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  padding-top: 1.5vw;
+  background-color: #254ca7;
+  color: white;
+}
+
+.diff-btn-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 3vw;
+  padding: 1.5vw;
+  background-color: #254ca7;
+}
+
+.diff-btn {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: clamp(1rem, 1.5vw, 2rem);
+  min-width: fit-content;
+  min-height: fit-content;
+  padding: 1vw 3vw 1vw 3vw;
+  background-color: #1a3575;
+  color: white;
+  border: 0px;
+  border-radius: 10vw;
+  transition-duration: 0.2s;
+}
+
+.diff-btn:hover {
+  font-size: clamp(1rem, 1.8vw, 2rem);
+  background-color: #abbfed;
+  color: #193576;
+}
+
+.diff-btn:active {
+  background-color: white;
+}
+
+.game-elements-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 3vw;
+  padding: 1.5vw;
+  background-color: #2c5bc9;
+}
+
+.hints {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: clamp(1rem, 2vw, 2rem);
+  width: min-content;
+  padding: 1.5vw;
+  gap: 1vw;
+}
+
+.hint-btn {
+  font-size: clamp(1rem, 2vw, 2rem);
+  width: fit-content;
+  padding: 1.5vw;
+  border-radius: 50%;
+  border: 0;
+  background-color: #587fda;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.restart-btn {
+  cursor: pointer;
+  font-size: clamp(1rem, 2vw, 2rem);
+  width: fit-content;
+  height: fit-content;
+  padding: 1vw;
+  background-color: #e0a800;
+  border: 0px;
+  border-radius: 50%;
+  transition-duration: 0.2s;
+}
+
+.restart-btn:hover {
+  background-color: #a36500;
+}
+
+.timer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  font-size: clamp(1rem, 2vw, 2rem);
+  font-weight: bold;
+  min-width: 10vw;
+  padding: 1.5vw;
+  border-radius: 50%;
+  background-color: #587fda;
+  color: white;
+  transition-duration: 0.2s;
+}
+
+.lives {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: clamp(1rem, 2vw, 2rem);
+  min-width: 10vw;
+  padding: 1.5vw;
+  border-radius: 50%;
+  background-color: #587fda;
+  transition-duration: 0.2s;
+}
+
+.board-container {
+  flex: 1 1 auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+}
+
+table {
+  border-spacing: 0.6vw;
+}
+
+td {
+  width: clamp(2vw, 4vw, 5vw);
+  height: clamp(2vw, 4vw, 5vw);
+  font-size: clamp(1rem, 2vw, 2rem);
+  text-align: center;
+  border-radius: 25%;
+  cursor: pointer;
+}
+
+.hidden-cell {
+  background-color: #2853b8;
+  border: 3px solid #122654;
+}
+
+.mine-cell {
+  background-color: #d3614a;
+  border: 3px solid #943624;
+}
+
+.num-cell {
+  color: #d3614a;
+  border: 3px solid #e77823;
+  background-color: #f9dec9;
+}
+
+footer {
+  flex: 0 1 1vw;
+  text-align: center;
+  padding: 1vw;
+  background-color: #2c5bc9;
+  color: white;
+}

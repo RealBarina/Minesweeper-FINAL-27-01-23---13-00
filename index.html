@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>SUPER Minesweeper</title>
+  </head>
+  <body onload="onInit()">
+    <div class="modal">
+      <h3 class="modal-msg"></h3>
+    </div>
+
+    <div class="main-container">
+      <div class="headers-container">
+        <span class="title-container">
+          <h1>💣 <i>SUPER</i> Minesweeper 💣</h1>
+        </span>
+
+        <span class="diff-title">Select difficulty:</span>
+        <div class="diff-btn-container">
+          <button onclick="onLevelSelect(1)" class="diff-btn">Beginner</button>
+          <button onclick="onLevelSelect(2)" class="diff-btn">Medium</button>
+          <button onclick="onLevelSelect(3)" class="diff-btn">Expert</button>
+        </div>
+
+        <div class="game-elements-container">
+          <span class="lives"></span>
+          <button class="restart-btn" onclick="onInit()"></button>
+          <div class="timer">Timer</div>
+          <span class="hints">
+            <button onclick="activateHint(1)" class="hint-btn hint-1">💡</button>
+            <button onclick="activateHint(2)" class="hint-btn hint-2">💡</button>
+            <button onclick="activateHint(3)" class="hint-btn hint-3">💡</button>
+          </span>
+        </div>
+      </div>
+
+      <div class="board-container"></div>
+
+      <footer>
+        This game was created and designed by Bar Barina © copyright all rights
+        reserved ©
+      </footer>
+    </div>
+
+    <script src="js/util.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
